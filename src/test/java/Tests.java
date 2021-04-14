@@ -50,6 +50,7 @@ public class Tests {
 
     @Test
     public void usage() {
+        TestVars.testVarsMap.clear();
         TestVars.setVar("my var", "Banco X");
         String value = (String) TestVars.getVar("my var");
         System.out.println(value);
